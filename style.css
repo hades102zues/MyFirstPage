@@ -1,0 +1,198 @@
+
+/*Globals*/
+body{
+	padding:0;
+	margin:0;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#DBD3C9;
+
+}
+.container{ /*site container*/
+
+	width:90%;
+	margin:auto;
+	overflow: hidden;
+}
+
+/*Globals-en*/
+
+header{
+	
+	background-color:#009688;
+	color:#ffffff;
+	min-height:50px;
+	/*border-bottom:.5px solid black;*/
+}
+
+header h2{
+	float:left;
+}
+
+nav{
+	float:right;
+	margin-top:22px;
+}
+
+header ul{
+	margin:0px;
+	padding:0px;
+
+}
+
+header li{
+	display:inline;
+	padding:0px 15px 0px 15px;
+	margin:0;
+	float:left; /*used to kill the retarded fucking padding that just doesnt go away, then we float right on nav*/
+}
+
+header a{
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size:20px;
+	color:white;
+}
+
+/*Globals-en*/
+
+
+/*showcase*/
+
+#showcase{
+	height:550px;
+	background-image:url("img/showcase-1.jpeg") ;
+	color:#ffffff;
+	position:relative;
+	font-size:35px;
+
+}
+
+#showcase h1{
+
+	position:absolute;
+	text-align:center;
+	top:15%;
+	left:50%;
+	transform:translateX(-50%);
+	width:1000px;
+	font-family:sans-serif;
+}
+
+
+/*showcase-en*/
+
+#magazine{
+	height:65px;
+	background-color:#009688;
+}
+#magazine form{
+	float:right;
+	padding:0;
+	margin-top:15px;
+
+}
+#magazine input[type="email"]{
+	padding:4px;
+	width: 260px;
+	height:15px;
+}
+#magazine button[type="submit"]{
+	height:27px;
+}
+#magazine h3{
+	float:left;
+	color:#ffffff;
+}
+
+
+/*display-area*/
+#display-area{
+	background-color:#232b2b; /*#DBD3C9; */
+	height: 650px;
+	color:#ffffff;
+
+}
+
+
+.card{
+	
+	
+	float:left;
+	top:50px;
+	padding:0;
+	margin:15px;
+	text-align:center;
+
+}
+
+.card-colour{
+	height:350px;
+	background-color: #009688;
+}
+
+#display-area img{
+
+	width:350px;
+	height:300px;
+
+}
+#display-area h4{
+	margin:30px;
+	color:#ffffff;
+	font-size:16px;
+	padding-top:22px;
+}
+
+/*display-area-en*/
+
+footer{
+	background-color: #009688;
+	height:75px;
+	padding:0;
+	margin-bottom:0;
+}
+
+.grid{
+
+	display:grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 1fr;
+	margin:0;
+	padding:0;
+	height:70px;
+
+}
+footer h2{
+	width:300px;
+	padding:0;
+	margin-top: 35px
+}
+
+
+
+
+#footer-company{
+	grid-column:1/span 4;
+	color:white;
+	font-size: 20px;
+	padding:0;
+	margin:0;
+	align-self:start;
+
+}
+
+#icon-pack{
+	grid-column:9/-1;
+	margin-top: 20px;
+	align-self:start;
+
+}
+.icon{
+
+	padding:0px 15px 0px 15px;
+	margin:0px;
+	float:right;
+}
