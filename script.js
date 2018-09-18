@@ -1,9 +1,9 @@
-var button= document.getElementById("button-subscribe");
-var input= document.getElementsByTagName("button")[0];
+const subscribe = document.getElementById("button-subscribe");
 
-button.addEventListener("click", function (){
 
-		if(input.value.length>0){
-			console.log("Thanks for subscribing");
-		}
-});
+const subscribeHandler = function(){
+
+	alert("Thanks for subscribing");
+};
+
+subscribe.addEventListener('click', subscribeHandler);
