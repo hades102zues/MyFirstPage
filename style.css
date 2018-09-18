@@ -1,13 +1,18 @@
 
 /*Globals*/
-body{
+*{
 	padding:0;
 	margin:0;
-	font-size:16px;
+	font-size:62.5%;
 	font-family:Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+body{
+	
 	background-color:#DBD3C9;
 
 }
+
 .container{ /*site container*/
 
 	width:90%;
@@ -21,17 +26,21 @@ header{
 	
 	background-color:#009688;
 	color:#ffffff;
-	min-height:50px;
-	/*border-bottom:.5px solid black;*/
+	padding-right:0px ;
+	min-height: 50px
+
 }
 
 header h2{
 	float:left;
+	font-size:2.5rem;
+	margin-top:11px;
+
 }
 
 nav{
 	float:right;
-	margin-top:22px;
+	margin-top:15px;
 }
 
 header ul{
@@ -52,7 +61,7 @@ header a{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight:bold;
-	font-size:20px;
+	font-size:2rem;
 	color:white;
 }
 
@@ -62,11 +71,10 @@ header a{
 /*showcase*/
 
 #showcase{
-	height:550px;
+	min-height:550px;
 	background-image:url("img/showcase-1.jpeg") ;
 	color:#ffffff;
 	position:relative;
-	font-size:35px;
 
 }
 
@@ -74,10 +82,11 @@ header a{
 
 	position:absolute;
 	text-align:center;
-	top:15%;
+	font-size:5rem;
+	top:50%;
 	left:50%;
 	transform:translateX(-50%);
-	width:1000px;
+	width:60%;
 	font-family:sans-serif;
 }
 
@@ -96,15 +105,23 @@ header a{
 }
 #magazine input[type="email"]{
 	padding:4px;
-	width: 260px;
-	height:15px;
+	width: 350px;
+	height:35px;
+	font-size:2rem;
+	border-radius:5px;
 }
 #magazine button[type="submit"]{
-	height:27px;
+	height:35px;
+	font-size:1.5rem;
+	border-radius:5px;
 }
 #magazine h3{
+
 	float:left;
 	color:#ffffff;
+	font-size:2.5rem;
+	padding:15px;
+
 }
 
 
@@ -115,36 +132,45 @@ header a{
 	color:#ffffff;
 
 }
-
-
-.card{
-	
-	
-	float:left;
-	top:50px;
-	padding:0;
-	margin:15px;
-	text-align:center;
-
+#display-area h2{
+	font-size: 3rem ;
 }
+#display-area p{
+	font-size: 1.5rem ;
+}
+
+
+
+.card{/**flexbox container**/
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-around;
+
+	
+}
+.card-item{/**flex**/
+}
+	
 
 .card-colour{
 	height:350px;
 	background-color: #009688;
 }
 
-#display-area img{
-
-	width:350px;
-	height:300px;
-
-}
 #display-area h4{
 	margin:30px;
 	color:#ffffff;
 	font-size:16px;
 	padding-top:22px;
 }
+#display-area img{
+
+	width:350px;
+	height:300px;
+
+}
+
+
 
 /*display-area-en*/
 
@@ -168,7 +194,8 @@ footer{
 footer h2{
 	width:300px;
 	padding:0;
-	margin-top: 35px
+	margin-top: 35px;
+	font-size: 2.5rem;
 }
 
 
@@ -195,4 +222,9 @@ footer h2{
 	padding:0px 15px 0px 15px;
 	margin:0px;
 	float:right;
+	font-size:1rem ;
+}
+
+@media all and (max-width: 1000px){tabs-land
+	
 }
