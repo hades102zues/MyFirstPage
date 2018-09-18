@@ -1,8 +1,14 @@
 
 /*Globals*/
+html{
+	padding:0px;
+	margin:0px;
+
+}
+
 *{
-	padding:0;
-	margin:0;
+	padding:0px;
+	margin:0px;
 	font-size:62.5%;
 	font-family:Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
@@ -71,14 +77,14 @@ header a{
 /*showcase*/
 
 #showcase{
-	min-height:550px;
+	height:550px;
 	background-image:url("img/showcase-1.jpeg") ;
 	color:#ffffff;
+	position:relative;
+
 
 }
-#showcase-container{
-	positon:relative;
-}
+
 #showcase h1{
 
 	position:absolute;
@@ -109,12 +115,10 @@ header a{
 	width: 350px;
 	height:35px;
 	font-size:2rem;
-	border-radius:5px;
 }
 #magazine button[type="submit"]{
 	height:35px;
 	font-size:1.5rem;
-	border-radius:5px;
 }
 #magazine h3{
 
@@ -145,7 +149,7 @@ header a{
 .card{/**flexbox container**/
 	display:flex;
 	flex-flow:row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 
 	
 }
@@ -156,22 +160,24 @@ header a{
 .card-colour{
 	height:350px;
 	background-color: #009688;
+	max-width: 335px;
+	max-height:335px;
 }
+.card-colour img{
+	width: 100%;
+	height:298px;
+
+}
+
 
 #display-area h4{
 	margin:30px;
 	color:#ffffff;
-	font-size:16px;
+	font-size:1.5rem;
 	padding-top:22px;
 }
 #display-area p{
 	padding-left: 5px;
-}
-#display-area img{
-
-	width:350px;
-	height:300px;
-
 }
 
 
@@ -182,7 +188,7 @@ footer{
 	background-color: #009688;
 	height:75px;
 	padding:0;
-	margin-bottom:0;
+	margin-bottom: 0px;
 }
 
 .grid{
@@ -229,6 +235,68 @@ footer h2{
 	font-size:1rem ;
 }
 
-@media all and (max-width: 1000px){tabs-land
-	
+@media all and (max-width:1200px){ /*tab-land*/
+
+	 *{
+	 	font-size:56%;
+	 }
+	 #showcase{
+	 	height:420px;
+	 }
+     #display-area{
+     	height:450px;
+     }
+     .card-item{
+     	height:310px;
+     	width:310px;
+     }
+
+}
+
+@media all and (max-width: 1024px){
+	*{
+	 	font-size:45%;
+	 }
+	#showcase{
+		height:480px;
+	}
+
+	#magazine h3{ 
+		font-size: 2rem;
+		padding-top:23px;
+	}
+
+	.card-item{
+     	height:290px;
+     	width:270px;
+     }
+     .card-colour img {
+     	height:210px;
+     }
+
+   
+   
+}
+
+@media all and (max-width: 768px){
+	*{
+	 	font-size:38%;
+	 }
+	#showcase{
+		height:380px;
+	}
+
+	#magazine h3{ 
+		font-size: 2rem;
+		padding-top:23px;
+	}
+
+	.card-item{
+     	height:280px;
+     	width:200px;
+     }
+     .card-colour img {
+     	height:195px;
+     }
+   
 }
