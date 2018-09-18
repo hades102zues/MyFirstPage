@@ -74,16 +74,17 @@ header a{
 	min-height:550px;
 	background-image:url("img/showcase-1.jpeg") ;
 	color:#ffffff;
-	position:relative;
 
 }
-
+#showcase-container{
+	positon:relative;
+}
 #showcase h1{
 
 	position:absolute;
 	text-align:center;
 	font-size:5rem;
-	top:50%;
+	top:40%;
 	left:50%;
 	transform:translateX(-50%);
 	width:60%;
@@ -162,6 +163,9 @@ header a{
 	color:#ffffff;
 	font-size:16px;
 	padding-top:22px;
+}
+#display-area p{
+	padding-left: 5px;
 }
 #display-area img{
 
